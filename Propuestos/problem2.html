@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function invertir(n){
+            let inv = "";
+            for(let i=0; i<n.length; i++){
+                inv = n.charAt(i) + inv;
+            }
+            document.getElementById('cambiar').innerHTML = "<h1> "+inv+ " </h1>";
+        }
+    </script>
+</head>
+<body>
+    <input id="texto"></input>
+    <button onclick="invertir(document.getElementById('texto').value)">presioname</button>
+    
+    <div id="cambiar">
+
+    </div>
+</body>
+</html>
