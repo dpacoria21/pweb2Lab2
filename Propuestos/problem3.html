@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function dayArequipa(){
+            let year = new Date().getFullYear();
+            let actualDay = new Date().getTime();
+            let especialDay = new Date(year,7,15).getTime();
+            let missingDays = Math.ceil((especialDay - actualDay)/86400000);
+            document.write(`<h1> Faltan ${missingDays} dias 
+                para la fiesta de Arequipa!!! </h1>`);
+        }
+    </script>
+</head>
+<body>
+    <script>
+        dayArequipa();
+    </script>
+</body>
+</html>
