@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function send(n){
+            let a = n.replace(/-/g, "");
+            console.log(a);
+            document.getElementById('mostrar').innerHTML = a;
+        }
+        function sendV2(n){
+            let res="";
+            for(let i = 0; i<n.length; i++){
+                if(n.charAt(i) != "-"){
+                    res = res + n.charAt(i);
+                }
+            }
+            document.getElementById('mostrar').innerHTML = res;
+            return res;
+        }
+    </script>
+</head>
+<body>
+    Ingrese el Link: <input id="link">
+    <button onclick="sendV2(document.getElementById('link').value)">Send</button>
+    <h1 id="mostrar"></h1>
+</body>
+</html>
