@@ -1,5 +1,6 @@
 let a = [];
 function crearTabla(n){
+    a.splice(0,a.length);
     for(let i=0; i<n; i++){
         a.push(Math.floor(Math.random()*(100 - 1) + 1));  
     }
@@ -22,5 +23,4 @@ function sumarTabla(){
     }
     let html =`La suma de la tabla es: ${acum}`;
     document.getElementById('suma').innerHTML = html;
-    a.splice(0,a.length);
 }
