@@ -6,15 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>problema 5</title>
     <script src="funcion.js"></script>
+    <style>
+        table, th, td {
+          border:1px solid black;
+        }
+    </style>
 </head>
 <body>
-    <form action="" name="formulario" method="post">
+    <form name="formulario" method="post" target="_self">
         <p>Ingres un numero</p>
         <input type="number" name="cantidad" id="cantidad">
-        <button onclick="crearTabla(document.getElementById('cantidad').value)">CrearTabla</button>
     </form>
-    <table id="tabla">
-    </table>
+    <button onclick="crearTabla(document.getElementById('cantidad').value)">CrearTabla</button>
     <button onclick="sumarTabla(document.getElementById('cantidad').value)">Sumar</button>
+    <table id="tabla"></table>
+    <h1 id="suma"></h1>
 </body>
 </html>
