@@ -10,6 +10,10 @@
     <form action="" name="formulario" method="post">
         <p>Ingres un numero</p>
         <input type="number" name="cantidad" id="cantidad">
+        <button onclick="crearTabla(document.getElementById('cantidad'))">CrearTabla</button>
     </form>
+    <table id="tabla">
+    </table>
+    <button onclick="sumarTabla(document.getElementById('cantidad'))">Sumar</button>
 </body>
 </html>
